@@ -13,8 +13,6 @@ import time
 import os
 
 
-quiz_game()
-
 class Game:
     def __inint__(self, max_points, current_points, price, game, is_locked):
         self.max_points = max_points
@@ -163,9 +161,9 @@ Vad vill du göra? (OBS! Svara endast med 1 siffra)
             if UserResult == "pass":
                 GetASnack.current_points = "pass"
         if user_input == "2":
-            UserResult = GetASnack.game
+            UserResult = Pong.game
             if UserResult == "pass":
-                GetASnack.current_points = "pass"
+                Pong.current_points = "pass"
         if user_input == "3":
             print("Finns inte just nu")
             time.sleep(cooldown)

@@ -1,7 +1,6 @@
 import pygame
 import sys
 
-pygame.init()
 
 # variabler
 WIDTH, HEIGHT = 700, 500
@@ -260,6 +259,7 @@ def main():
     
 # start menyn
 def main_menu():
+    pygame.init()
     run = True
     while run:
         for event in pygame.event.get():
